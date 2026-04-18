@@ -37,6 +37,8 @@ Com base nos dados obtidos, selecione uma prática ou dado de teste relevante e 
 
 ## Respostas
 
-**1. Repositório selecionado:** `<URL_DO_REPOSITÓRIO_AQUI>`
+**1. Repositório selecionado:** `(https://github.com/airbnb/javascript) / https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/test/test-react-order.js `
 
-**2. Explicação:** `<SUA_EXPLICAÇÃO_AQUI>`
+**2. Explicação:** `O código analisado aplica a prática de Testes de Unidade para Validação de Regras de Linting, utilizando a biblioteca tape e a API do ESLint. O objetivo central não é testar o funcionamento de um software final, mas sim garantir a integridade das regras de padronização impostas pelo guia de estilo da Airbnb.
+
+A prática foca especificamente na regra react/sort-comp, que estabelece uma hierarquia rígida para a declaração de métodos em classes React. O teste funciona simulando o comportamento de um desenvolvedor: ele injeta blocos de código propositalmente desordenados em uma função auxiliar (wrapComponent) e executa o linter programaticamente. A validação é bem-sucedida quando o linter identifica o erro de ordenação esperado (ex: um método customizado declarado antes de um método de ciclo de vida como o componentDidMount). Essa abordagem garante que qualquer alteração futura nas configurações de estilo não comprometa a consistência estética e estrutural dos projetos que utilizam essa biblioteca.`
